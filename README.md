@@ -42,6 +42,7 @@ npm run dev
 
 ## 📁 Folder Structure
 
+```bash
 .
 ├── public/          # Static assets
 ├── src/
@@ -51,6 +52,7 @@ npm run dev
 │   └── styles/      # Tailwind config or global CSS
 ├── README.md
 └── package.json
+```
 
 ## 🙋 About Me
 I’m a web developer passionate about creating responsive, user-focused web applications. I enjoy learning modern technologies and turning ideas into reality with clean, efficient code.
