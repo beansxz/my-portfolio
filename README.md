@@ -27,10 +27,10 @@ A clean and modern personal portfolio built with **React**, **TypeScript**, and 
 
 ```bash
 # Clone the repository
-git clone https://github.com/beansxz/your-portfolio.git
+git clone https://github.com/beansxz/my-portfolio.git
 
 # Navigate into the project directory
-cd your-portfolio
+cd my-portfolio
 
 # Install dependencies
 npm install
