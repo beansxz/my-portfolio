@@ -23,7 +23,6 @@ A clean and modern personal portfolio built with **React**, **TypeScript**, and 
 
 ## 📦 Installation
 
-```bash
 # Clone the repository
 git clone https://github.com/your-username/your-portfolio.git
 
@@ -35,3 +34,25 @@ npm install
 
 # Start the development server
 npm run dev
+
+## 🔗 Live Demo
+👉 View Live Site
+
+## 📁 Folder Structure
+
+.
+├── public/          # Static assets
+├── src/
+│   ├── components/  # UI components (Navbar, Footer, etc.)
+│   ├── pages/       # Page components (Home, Projects, Contact)
+│   ├── data/        # Content and JSON data
+│   └── styles/      # Tailwind config or global CSS
+├── README.md
+└── package.json
+
+## 🙋 About Me
+I’m a web developer passionate about creating responsive, user-focused web applications. I enjoy learning modern technologies and turning ideas into reality with clean, efficient code.
+
+## 📫 Contact
+GitHub: https://github.com/beansxz
+Email: vinceianescopete07@gmail.com
