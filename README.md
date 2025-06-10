@@ -14,8 +14,6 @@ A clean and modern personal portfolio built with **React**, **TypeScript**, and 
 
 ## 🛠️ Tech Stack
 
-## 🛠️ Tech Stack
-
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=fff)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=fff)](https://tailwindcss.com/)
