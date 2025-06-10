@@ -63,4 +63,5 @@ I’m a web developer passionate about creating responsive, user-focused web app
 GitHub: https://github.com/beansxz<br>
 Email: vinceianescopete07@gmail.com
 
+##
 This portfolio is part of my ongoing growth as a developer. Feel free to fork, contribute, or provide feedback!
