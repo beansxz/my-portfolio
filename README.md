@@ -23,6 +23,7 @@ A clean and modern personal portfolio built with **React**, **TypeScript**, and 
 
 ## 📦 Installation
 
+```bash
 # Clone the repository
 git clone https://github.com/your-username/your-portfolio.git
 
@@ -34,6 +35,7 @@ npm install
 
 # Start the development server
 npm run dev
+```
 
 ## 🔗 Live Demo
 👉 View Live Site
