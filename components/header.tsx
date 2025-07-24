@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header className="z-[999] relative">
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white/30 bg-white/70 shadow-lg shadow-black/[0.03] backdrop-blur-md sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950/80 dark:border-black/40"
+        className="fixed top-4 left-1/2 -translate-x-1/2 h-[4.5rem] w-full sm:w-[36rem] border border-gray-100 dark:border-white bg-gradient-to-br from-dark-blue-600 to-white-100 shadow-lg shadow-black/[0.25] dark:shadow-white/[0.15] backdrop-blur-md sm:top-4 sm:h-[4rem] rounded-full sm:rounded-full dark:from-indigo-100 dark:text-white-600 dark:border-white/30 p-4"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>

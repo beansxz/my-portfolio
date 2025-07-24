@@ -4,9 +4,8 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
+    import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -41,9 +40,9 @@ export default function Intro() {
                         Code • Create • Innovate
                     </div>
                     <div className="text-lg text-gray-600 dark:text-white/80">
-                        I'm a passionate software developer with a knack for
+                        I&#39;m a passionate software developer with a knack for
                         crafting elegant solutions and building innovative
-                        applications. Let's connect and create something amazing
+                        applications. Let&#39;s connect and create something amazing
                         together!
                     </div>
                     <div className="flex flex-col sm:flex-row items-center gap-3 mt-6">
@@ -75,7 +74,7 @@ export default function Intro() {
                     animate={{ opacity: 1, x: 0 }}
                 >
                     <Image
-                        src="/img/beansxz.jpg"
+                        src="/beansxz.jpg"
                         alt="beansxz"
                         fill
                         style={{ objectFit: "cover" }}
