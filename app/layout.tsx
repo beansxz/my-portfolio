@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import "@/styles/globals.css";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
+import DayNightSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import { Poppins } from "next/font/google";
@@ -36,7 +36,7 @@ export default function RootLayout({
             <Footer />
 
             <Toaster position="top-right" />
-            <ThemeSwitch />
+            <DayNightSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
