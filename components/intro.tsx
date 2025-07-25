@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-    import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -17,7 +17,7 @@ export default function Intro() {
         <section
             ref={ref}
             id="home"
-            className="mb-28 max-w-5xl mx-auto px-4 sm:mb-0 scroll-mt-[100rem]"
+            className="min-h-screen mb-28 max-w-5xl mx-auto px-4 sm:mb-0 scroll-mt-[100rem]"
         >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center p-8">
                 {/* Details (Left) */}
@@ -28,7 +28,7 @@ export default function Intro() {
                 >
                     <div className="text-5xl font-black bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent dark:from-blue-400 dark:via-purple-400 dark:to-pink-400">
                     <div className="text-3xl text-black/75 dark:text-white/85">
-                        hi, i'm {" "} 
+                        hi, i&#39;m {" "} 
                     </div> 
                         beansxz
                     <span className="text-5xl text-gray-900 dark:text-white/85">

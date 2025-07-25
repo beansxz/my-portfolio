@@ -2,16 +2,43 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { FiMenu, FiX } from "react-icons/fi";
+
+export const links = [
+  {
+    name: "Home",
+    hash: "#home",
+  },
+  {
+    name: "About",
+    hash: "#about",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
+  {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
+]
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="z-[999] relative">
@@ -21,8 +48,37 @@ export default function Header() {
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
 
-      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+      {/* Mobile Menu Button */}
+      <div className="fixed top-6 left-6 sm:hidden z-[1000]">
+        <button
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+          className="p-2 rounded-full bg-white dark:bg-dark-blue-600 shadow-md"
+        >
+          {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+        </button>
+      </div>
+
+      {/* Navigation */}
+      <nav
+        className={clsx(
+          "fixed left-1/2 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0",
+          {
+            "top-[0.15rem] h-12": !isMenuOpen,
+            "top-0 left-0 w-full h-screen bg-white dark:bg-dark-blue-600 flex items-center justify-center sm:static sm:w-auto sm:h-auto sm:bg-transparent":
+              isMenuOpen,
+          }
+        )}
+      >
+        <ul
+          className={clsx(
+            "flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5",
+            {
+              "flex-col gap-8 text-xl": isMenuOpen,
+              "w-[22rem] sm:gap-5": !isMenuOpen,
+            }
+          )}
+        >
           {links.map((link) => (
             <motion.li
               className="h-3/4 flex items-center justify-center relative"
@@ -42,6 +98,7 @@ export default function Header() {
                 onClick={() => {
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
+                  setIsMenuOpen(false); // Close menu on mobile after click
                 }}
               >
                 {link.name}
